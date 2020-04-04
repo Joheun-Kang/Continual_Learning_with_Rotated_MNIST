@@ -64,7 +64,7 @@ for dataset in datasets:
         all_colors.append(colors[li])
     plt.bar(x_ind + (len(y_acc) + 1) * 1, y_bwt, color=all_colors)
     plt.bar(x_ind + (len(y_acc) + 1) * 2, y_fwt, color=all_colors)
-    plt.xticks([2, 8, 14], ['ACC', 'BWT', 'FWT'], fontsize=16)
+    plt.xticks([0, 2, 4], ['ACC', 'BWT', 'FWT'], fontsize=16)
     plt.yticks(fontsize=16)
     plt.xlim(-1, len(y_acc) * 3 + 2)
     plt.ylabel('classification accuracy', fontsize=16)
