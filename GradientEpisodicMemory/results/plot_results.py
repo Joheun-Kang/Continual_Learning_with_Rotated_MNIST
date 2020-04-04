@@ -52,8 +52,8 @@ for dataset in datasets:
         if barplot[dataset][model] != {}:
             x_lab.append(model)
             y_acc.append(barplot[dataset][model]['acc'])
-            y_bwt.append(barplot[dataset][model]['bwt'])
-            y_fwt.append(barplot[dataset][model]['fwt'])
+            y_bwt.append(barplot[dataset][model]['backward'])
+            y_fwt.append(barplot[dataset][model]['forward'])
 
     x_ind = np.arange(len(y_acc))
 
