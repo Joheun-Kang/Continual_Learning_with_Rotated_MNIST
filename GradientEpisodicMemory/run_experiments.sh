@@ -21,19 +21,6 @@ $MY_PYTHON mnist_rotations.py \
 
 cd ..
 
-# model "single"
-$MY_PYTHON main.py $MNIST_ROTA --model single --lr 0.003
- 
-# model "independent"
-$MY_PYTHON main.py $MNIST_ROTA --model independent --lr 0.1  --finetune yes
-
-# model "multimodal"
-$MY_PYTHON main.py $MNIST_ROTA  --model multimodal --lr 0.1
-
-
-# model "EWC"
-$MY_PYTHON main.py $MNIST_ROTA --model ewc --lr 0.01 --n_memories 1000 --memory_strength 1000
-
 # model "GEM"
 $MY_PYTHON main.py $MNIST_ROTA --model gem --lr 0.1 --n_memories 256 --memory_strength 0.5
 
